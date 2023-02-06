@@ -1,0 +1,17 @@
+.address {
+	margin-top: 20px;
+}
+.address__link {
+	line-height: 1.71;
+
+	color: $white-text-color;
+
+	transition-property: color;
+	transition-duration: $timing-transition;
+	transition-timing-function: $timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}

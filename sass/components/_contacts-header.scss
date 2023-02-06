@@ -1,0 +1,89 @@
+.contacts-nav {
+	display: none;
+
+	@include tablet {
+		display: block;
+		padding-top: 21px;
+		padding-bottom: 21px;
+		margin-left: 84px;
+	}
+	@include desktop {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		display: flex;
+		margin-left: auto;
+		& .contacts-nav__item + .contacts-nav__item {
+			margin-left: 50px;
+		}
+	}
+}
+.contacts-nav__icon {
+	margin-right: 8px;
+	vertical-align: middle;
+	fill: $secondary-text-color;
+
+	transition-property: fill;
+	transition-duration: $timing-transition;
+	transition-timing-function: $timing-function;
+	@include desktop {
+		margin-right: 10px;
+	}
+}
+@include tablet {
+	.contacts-nav__icon.contacts-nav__icon--envelope {
+		width: 14px;
+		height: 12px;
+	}
+	.contacts-nav__icon.contacts-nav__icon--smartphone {
+		width: 10px;
+		height: 14px;
+	}
+}
+@include desktop {
+	.contacts-nav__icon.contacts-nav__icon--envelope {
+		width: 16px;
+		height: 14px;
+	}
+	.contacts-nav__icon.contacts-nav__icon--smartphone {
+		width: 10px;
+		height: 16px;
+	}
+}
+
+.contacts-nav__link {
+	@include tablet {
+		.contacts-nav & {
+			font-weight: 500;
+			font-style: normal;
+			font-size: 12px;
+			line-height: calc(14 / 12);
+
+			letter-spacing: 0.02em;
+
+			color: $secondary-text-color;
+
+			transition-property: color;
+			transition-duration: $timing-transition;
+			transition-timing-function: $timing-function;
+		}
+		&:hover .contacts-nav__icon,
+		&:focus .contacts-nav__icon {
+			fill: $accent-color;
+		}
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+		@include desktop {
+			.contacts-nav & {
+				font-size: 14px;
+				line-height: calc(16 / 14);
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.contacts-nav__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+}

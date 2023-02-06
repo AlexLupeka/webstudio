@@ -1,0 +1,15 @@
+.contact__link {
+	color: $footer-contact-link-color;
+
+	line-height: 1.71;
+
+	transition: $timing-transition $timing-function;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.contact__item {
+	margin-top: 9px;
+}

@@ -1,0 +1,71 @@
+.follow-us__form {
+	@media screen and (min-width: 768px) {
+		display: inline-block;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
+.follow-us {
+	margin-left: auto;
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		margin: auto;
+		margin-top: 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-left: 93px;
+	}
+}
+.follow-us__text {
+	@extend %text;
+
+	color: $white-text-color;
+	margin-bottom: 20px;
+}
+.follow-us__input {
+	width: 100%;
+	height: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 16px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	align-items: center;
+	letter-spacing: 0.03em;
+
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	outline: $accent-color;
+
+	transition-property: filter, color, border-color;
+	transition-duration: $timing-transition;
+	transition-timing-function: $timing-function;
+
+	&:hover,
+	&:focus,
+	&:not(:placeholder-shown) {
+		border-color: $accent-color;
+	}
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+	}
+}
+
+.follow-us__icon {
+	position: absolute;
+	bottom: 13px;
+	right: 28px;
+
+	width: 24px;
+	height: 24px;
+}

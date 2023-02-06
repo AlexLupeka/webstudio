@@ -1,0 +1,87 @@
+.hero__btn {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 32px;
+
+	@extend %btn;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-batton-color;
+	}
+}
+
+.form-modal__btn {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 55px 10px 56px;
+
+	@extend %btn;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-batton-color;
+	}
+}
+
+.follow-us__btn {
+	position: relative;
+	padding: 10px 62px 10px 29px;
+	margin: auto;
+	margin-top: 20px;
+
+	@media screen and (min-width: 1200px) {
+		margin: 0;
+		margin-left: 12px;
+		margin-top: 0;
+	}
+	@extend %btn;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-batton-color;
+	}
+}
+
+.filter__btn {
+	padding: 6px 22px;
+
+	@extend %filter__btn;
+
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover,
+	&:focus {
+		color: $white-text-color;
+		background-color: $accent-color;
+		box-shadow: $portfolio-button-box-shadow;
+	}
+	@include tablet {
+		margin-bottom: 0;
+	}
+}
+
+.menu-open-btn {
+	display: block;
+	margin-left: auto;
+	border: none;
+	background-color: transparent;
+
+	@include tablet {
+		display: none;
+	}
+}
+.menu-close-btn {
+	display: block;
+	margin-left: auto;
+	margin-bottom: 8.33;
+	border: none;
+	background-color: transparent;
+
+	@include tablet {
+		display: none;
+	}
+}

@@ -1,0 +1,49 @@
+.service {
+	display: none;
+	padding-top: 0;
+	@include desktop {
+		display: block;
+	}
+}
+
+.service__title {
+	@extend %title;
+
+	@include desktop {
+		margin-bottom: 50px;
+
+		font-size: 36px;
+		line-height: calc(42 / 36);
+	}
+}
+.service__list {
+	display: flex;
+}
+.service__item {
+	position: relative;
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.service__text {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	width: 100%;
+	height: 70px;
+
+	font-weight: 700;
+	line-height: 1.17;
+	text-transform: uppercase;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	background: rgba(47, 48, 58, 0.8);
+	color: $white-text-color;
+}

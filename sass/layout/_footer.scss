@@ -1,0 +1,19 @@
+.page-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: $secondary-bg-color;
+}
+.page-footer .container {
+	display: block;
+	align-items: baseline;
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		text-align: left;
+	}
+}

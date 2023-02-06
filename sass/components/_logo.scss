@@ -1,0 +1,30 @@
+.logo {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	color: $accent-color;
+
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 24px;
+	line-height: calc(28 / 24);
+
+	@include tablet {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	@include desktop {
+		font-size: 26px;
+		line-height: calc(31 / 26);
+	}
+}
+.page-footer__logo {
+	color: $white-text-color;
+}
+
+.page-header__logo {
+	color: $accessory-color;
+	margin-right: 88px;
+	@include desktop {
+		margin-right: 93px;
+	}
+}

@@ -1,0 +1,59 @@
+%btn {
+	display: flex;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+
+	color: $white-text-color;
+	background-color: $accent-color;
+
+	box-shadow: $button-box-shadow;
+	border-radius: $border-radius;
+	border: none;
+
+	transition-property: background-color, box-shadow;
+	transition-duration: $timing-transition;
+	transition-timing-function: $timing-function;
+}
+%filter__btn {
+	font-weight: 500;
+	font-size: 16px;
+	font-family: inherit;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+
+	color: $primary-text-color;
+	background-color: $button-bg-color;
+
+	border: none;
+	border-radius: $border-radius;
+
+	transition-property: color, background-color, box-shadow;
+	transition-duration: $timing-transition;
+	transition-timing-function: $timing-function;
+}
+%title {
+	margin-bottom: 30px;
+
+	font-weight: 700;
+	font-size: 28px;
+	line-height: calc(32 / 28);
+	text-align: center;
+
+	color: $primary-text-color;
+}
+%text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
